@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!-- <app-header></app-header>
+
+<div class="container_1">
+    <app-sidebar></app-sidebar>
+    <app-right-bar></app-right-bar>
+</div> -->
+
+<!-- <div class ="container_2">
+    <div class ="flex(0.05)"><app-ttv-sidebar></app-ttv-sidebar></div>
+    <div class ="flex(0.95)"><app-ttv-script></app-ttv-script></div>
+</div> -->
+    
+<!-- <app-keyword-video></app-keyword-video> -->
+
+<router-outlet></router-outlet>
+<!-- 
+app.component에 router-outle 만을 남겨두면 
+app-routing.module 에 설정된 경로 대로 나오게 됩니다.
+해당 파일을 보시면 아래와 같이 해두었는데, 이는 처음 나오는 화면을 mainComponent에 있는 내용으로 보여주겠다고 설정하는 겁니다.
+('' 으로 해두면 최상위 경로라는 뜻입니다.)
+
+const routes: Routes = [
+  {
+    path: '',
+    component: MainComponent
+  }
+];
+
+또한, _component 아래에 header를 만들어 두었는데 헤더나 사이드바 같이 자주 사용되는 컴포넌트 들은 하나의 폴더 내부에 묶어두면 좋습니다
+
+header를 다른 컴포넌트에서 사용하기 위해서는 header-test.module 에 설정해둔거 참고하시고,
+main.module 에 import. 그리고 main.component에 선택자(seleter) 명을 적어주시면 됩니다.
+
+참고해서 헤더와 사이드바들 _component 하위에 위치시키고 main에 적용해보시기 바랍니다.
+ -->
